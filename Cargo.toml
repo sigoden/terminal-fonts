@@ -1,10 +1,25 @@
 [package]
-name = "terminal-font"
+name = "terminal-fonts"
 version = "0.1.0"
 authors = ["sigoden <sigoden@gmail.com>"]
 edition = "2018"
+license = "MIT"
+description = """
+Big fonts for terminal display. Each character is a block formed by many dots.
+"""
+repository = "https://github.com/sigoden/terminal-fonts"
+keywords = ["terminal", "fonts"]
+exclude = ["assets/*", ".github"]
+autoexamples = true
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-lazy_static = "1.4.0"
+lazy_static = "1.4"
+
+[[example]]
+name = "simple"
+
+[[example]]
+name = "complex"
